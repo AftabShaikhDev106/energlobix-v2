@@ -33,75 +33,98 @@
     <div class="navbar-container">
         <div class="energlobix__navbar">
             <a href="index.html">
-                <img src="assets/images/logo.png" alt="" class="logo" />
+                <img src="assets/images/square-logo-white.png" alt="" class="logo" />
             </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                &#9776;
-            </button>                
+            <div class="navbar-right-side">
+                <div class="navlinks">
+                    <ul>
+                        <a href="whoweare.html"><li>Who We Are</li></a>
+                        <a href="whatwedo.html"><li>What We Do</li></a>
+                        <a href="howwedoit.html"><li>How We Do it</li></a>
+                        <a href="insights.html"><li class="active">Insights</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </div>
 
-            <div class="navlinks">
-                <ul>
-                    <a href="whoweare.html"><li>Who We Are</li></a>
-                    <a href="whatwedo.html"><li>What We Do</li></a>
-                    <a href="howwedoit.html"><li>How We Do it</li></a>
-                    <a href="insights.html"><li class="active">Insights</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
-            </div>
+                <!-- Hamburger Icon & Menu Dropdown Wrapper -->
+                <div class="menu-wrapper">
+                    <button
+                        class="hamburger-btn"
+                        id="open-menu-btn"
+                        aria-label="Toggle navigation"
+                    >
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            ></path>
+                        </svg>
+                    </button>
 
-            <div class="navlinks-mobile">
-                <ul>
-                        <li>
-                            <div onclick="toggleSubmenu('who-we-are-m-links')" class="link-header text-white">Who We Are <img src="assets/images/chevron-right.svg" alt="right"></div>
-                            <ul id="who-we-are-m-links">
-                                <a href="whoweare.html"><li>Welcome</li></a>
-                                <a href="whoweare.html#Purpose-and-Values"><li>Purpose and Values</li></a>
-                                <a href="whoweare.html#Vision-and-Mission"><li>Vision and Mission</li></a>
-                                <a href="whoweare.html#story"><li>EnerGlobix Story</li></a>
-                                <a href="whoweare.html#Key-achievements"><li>Key achievements</li></a>
-                                <a href="whoweare.html#Commitment-to-excellence"><li>Commitment to excellence</li></a>
-                            </ul>
-                        </li>                    
-                    <li>
-                        <div onclick="toggleSubmenu('what-we-do-m-links')" class="link-header text-white active">What We Do <img src="assets/images/chevron-right.svg" alt="right"></div>
-                        <ul id="what-we-do-m-links">
-                            <a href="whatwedo.html"><li>Our Commodities</li></a>
-                            <a href="whatwedo.html#TC1-Aviation-Fuel"><li>TC1 Aviation Fuel</li></a>
-                            <a href="whatwedo.html#Diesel"><li>Diesel</li></a>
-                            <a href="whatwedo.html#Petrol"><li>Petrol</li></a>
-                            <a href="whatwedo.html#Crude"><li>Crude</li></a>
-                            <a href="whatwedo.html#Coal"><li>Coal</li></a>
-                            <a href="whatwedo.html#Fertilizer"><li>Fertilizer</li></a>
+                    <!-- Dropdown Menu / Sidebar -->
+                    <div class="nav-menu-container" id="nav-menu">
+                        <!-- Sidebar Close Button (only visible on mobile/tablet) -->
+                        <button class="close-menu-btn" id="close-menu-btn" aria-label="Close navigation">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+
+                        <ul class="nav-menu-list">
+
+                            <li class="nav-menu-item has-submenu">
+                                <a href="#" class="nav-menu-link toggle-submenu">
+                                    Energy
+                                    <svg class="submenu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <ul class="nav-submenu">
+                                    <li><a href="https://energlobix.com/" class="submenu-link">Home</a></li>
+                                    <li><a href="https://energlobix.com/whoweare/" class="submenu-link">Who We Are</a></li>
+                                    <li><a href="https://energlobix.com/whatwedo/" class="submenu-link">What We Do</a></li>
+                                    <li><a href="https://energlobix.com/howwedoit/" class="submenu-link">How We Do It</a></li>
+                                    <li><a href="https://energlobix.com/insights/" class="submenu-link">Insights</a></li>
+                                    <li><a href="https://energlobix.com/contact" class="submenu-link">Contact</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-menu-item has-submenu">
+                                <a href="#" class="nav-menu-link toggle-submenu">
+                                    Agriculture
+                                    <svg class="submenu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                                <ul class="nav-submenu">
+                                    <li><a href="https://energlobixagriculture.kasehub.com/" class="submenu-link">Home</a></li>
+                                    <li><a href="https://energlobixagriculture.kasehub.com/who-we-are.html" class="submenu-link">Who We Are</a></li>
+                                    <li><a href="https://energlobixagriculture.kasehub.com/what-we-do.html" class="submenu-link">What We Do</a></li>
+                                    <li><a href="https://energlobixagriculture.kasehub.com/how-we-do-it.html" class="submenu-link">How We Do It</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-menu-item">
+                                <a
+                                    href="https://energlobixholding.kasehub.com/"
+                                    class="nav-menu-link"
+                                    >Holding</a
+                                >
+                            </li>
+
+                            <li class="nav-menu-item">
+                                <a
+                                    href="https://energlobix.kasehub.com/"
+                                    class="nav-menu-link"
+                                    >Main Page</a
+                                >
+                            </li>
+                            
                         </ul>
-                    </li>
-
-                    <li>
-                        <div onclick="toggleSubmenu('how-we-do-it-m-links')" class="link-header text-white">How We Do it <img src="assets/images/chevron-right.svg" alt="right"></div>
-                        <ul id="how-we-do-it-m-links">
-                            <a href="howwedoit.html"><li>Our Commitment</li></a>
-                            <a href="howwedoit.html#Supply"><li>Supply</li></a>
-                            <a href="howwedoit.html#Supply-solutions"><li>Supply solutions</li></a>
-                            <a href="howwedoit.html#Distribution"><li>Distribution</li></a>
-                            <a href="howwedoit.html#Distribution-solutions"><li>Distribution solutions</li></a>
-                            <a href="howwedoit.html#Investment"><li>Investment</li></a>
-                            <a href="howwedoit.html#Investment-solutions"><li>Investment solutions</li></a>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <div onclick="toggleSubmenu('insights-m-links')" class="link-header text-white">Insights <img src="assets/images/chevron-right.svg" alt="right"></div>
-                        <ul id="insights-m-links">
-                            <a href="insights.html"><li>Our Culture</li></a>
-                            <a href="insights.html#Employees"><li>Employees</li></a>
-                            <a href="insights.html#Achievements"><li>Achievements</li></a>
-                            <a href="insights.html#Careers"><li>Careers</li></a>                            
-                        </ul>
-                    </li>                    
-
-                    <li class="link-header">
-                        <a class="text-white" href="contact.html">Contact <img src="assets/images/chevron-right.svg" alt="right"></a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -211,7 +234,7 @@
         <div class="footer-section" style="padding-top: 52.328px">
             <div class="container">
                 <div class="footer-logo text-center">
-                    <img src="assets/images/logo.png" alt="" />
+                    <img src="assets/images/square-logo-white.png" alt="" />
                 </div>                
 
                 <div class="footer-links mt-5">
