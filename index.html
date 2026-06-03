@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGlobix :: Home</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader" style="height: 100vh;">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border" role="status">
+          <span class="sr-only"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+      <div class="navbar-container">
+        <div class="energlobix__navbar">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" class="logo" />
+          </a>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            &#9776;
+          </button>
+
+          <div class="navlinks">
+            <ul>
+              <a href="whoweare.html"><li>Who We Are</li></a>
+              <a href="whatwedo.html"><li>What We Do</li></a>
+              <a href="howwedoit.html"><li>How We Do it</li></a>
+              <a href="insights.html"><li>Insights</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+          </div>
+
+          <div class="navlinks-mobile">
+            <ul>
+              <li>
+                <div
+                  onclick="toggleSubmenu('who-we-are-m-links')"
+                  class="link-header text-white"
+                >
+                  Who We Are
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="who-we-are-m-links">
+                  <a href="whoweare.html"><li>Welcome</li></a>
+                  <a href="whoweare.html#Purpose-and-Values"
+                    ><li>Purpose and Values</li></a
+                  >
+                  <a href="whoweare.html#Vision-and-Mission"
+                    ><li>Vision and Mission</li></a
+                  >
+                  <a href="whoweare.html#story"><li>EnerGlobix Story</li></a>
+                  <a href="whoweare.html#Key-achievements"
+                    ><li>Key achievements</li></a
+                  >
+                  <a href="whoweare.html#Commitment-to-excellence"
+                    ><li>Commitment to excellence</li></a
+                  >
+                </ul>
+              </li>
+              <li>
+                <div
+                  onclick="toggleSubmenu('what-we-do-m-links')"
+                  class="link-header text-white active"
+                >
+                  What We Do
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="what-we-do-m-links">
+                  <a href="whatwedo.html"><li>Our Commodities</li></a>
+                  <a href="whatwedo.html#TC1-Aviation-Fuel"
+                    ><li>TC1 Aviation Fuel</li></a
+                  >
+                  <a href="whatwedo.html#Diesel"><li>Diesel</li></a>
+                  <a href="whatwedo.html#Petrol"><li>Petrol</li></a>
+                  <a href="whatwedo.html#Crude"><li>Crude</li></a>
+                  <a href="whatwedo.html#Coal"><li>Coal</li></a>
+                  <a href="whatwedo.html#Fertilizer"><li>Fertilizer</li></a>
+                </ul>
+              </li>
+
+              <li>
+                <div
+                  onclick="toggleSubmenu('how-we-do-it-m-links')"
+                  class="link-header text-white"
+                >
+                  How We Do it
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="how-we-do-it-m-links">
+                  <a href="howwedoit.html"><li>Our Commitment</li></a>
+                  <a href="howwedoit.html#Supply"><li>Supply</li></a>
+                  <a href="howwedoit.html#Supply-solutions"
+                    ><li>Supply solutions</li></a
+                  >
+                  <a href="howwedoit.html#Distribution"
+                    ><li>Distribution</li></a
+                  >
+                  <a href="howwedoit.html#Distribution-solutions"
+                    ><li>Distribution solutions</li></a
+                  >
+                  <a href="howwedoit.html#Investment"><li>Investment</li></a>
+                  <a href="howwedoit.html#Investment-solutions"
+                    ><li>Investment solutions</li></a
+                  >
+                </ul>
+              </li>
+
+              <li>
+                <div
+                  onclick="toggleSubmenu('insights-m-links')"
+                  class="link-header text-white"
+                >
+                  Insights
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="insights-m-links">
+                  <a href="insights.html"><li>Our Culture</li></a>
+                  <a href="insights.html#Employees"><li>Employees</li></a>
+                  <a href="insights.html#Achievements"><li>Achievements</li></a>
+                  <a href="insights.html#Careers"><li>Careers</li></a>
+                </ul>
+              </li>
+
+              <li class="link-header">
+                <a class="text-white" href="contact.html"
+                  >Contact
+                  <img src="assets/images/chevron-right.svg" alt="right"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slider-section">
+        <div
+          class="slide active"
+          style="
+            background-image: url('assets/images/banners/shutterstock_2168518333.jpg');
+          "
+        >
+          <div class="hero-mid-section">
+            <img
+              class="single-logo-transparent"
+              src="assets/images/single-logo-transparent.png"
+              alt=""
+            />
+            <div class="hero-mid-section-content">
+              <div class="hero-title">
+                Energy that brings everyone closer together
+              </div>
+              <div class="hero-subtitle">365 days a year - We are here</div>
+            </div>
+          </div>
+
+          <div class="hero-lower-section">
+            <div class="explore-link-container">
+              <a class="explore-link" href="#about-us">
+                <div class="explore-text">Explore</div>
+                <img src="assets/images/down-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url('assets/images/banners/shutterstock_130262159_v2.jpg');
+          "
+        >
+          <div class="hero-mid-section">
+            <img
+              class="single-logo-transparent"
+              src="assets/images/single-logo-transparent.png"
+              alt=""
+            />
+            <div class="hero-mid-section-content">
+              <div class="hero-title">
+                Energy that brings everyone closer together
+              </div>
+              <div class="hero-subtitle">365 days a year - We are here</div>
+            </div>
+          </div>
+
+          <div class="hero-lower-section">
+            <div class="explore-link-container">
+              <a class="explore-link" href="#about-us">
+                <div class="explore-text">Explore</div>
+                <img src="assets/images/down-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url('assets/images/banners/shutterstock_274681841.jpg');
+          "
+        >
+          <div class="hero-mid-section">
+            <img
+              class="single-logo-transparent"
+              src="assets/images/single-logo-transparent.png"
+              alt=""
+            />
+            <div class="hero-mid-section-content">
+              <div class="hero-title">
+                Energy that brings everyone closer together
+              </div>
+              <div class="hero-subtitle">365 days a year - We are here</div>
+            </div>
+          </div>
+
+          <div class="hero-lower-section">
+            <div class="explore-link-container">
+              <a class="explore-link" href="#about-us">
+                <div class="explore-text">Explore</div>
+                <img src="assets/images/down-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url('assets/images/banners/shutterstock_1803964558_v2.jpg');
+          "
+        >
+          <div class="hero-mid-section">
+            <img
+              class="single-logo-transparent"
+              src="assets/images/single-logo-transparent.png"
+              alt=""
+            />
+            <div class="hero-mid-section-content">
+              <div class="hero-title">
+                Energy that brings everyone closer together
+              </div>
+              <div class="hero-subtitle">365 days a year - We are here</div>
+            </div>
+          </div>
+
+          <div class="hero-lower-section">
+            <div class="explore-link-container">
+              <a class="explore-link" href="#about-us">
+                <div class="explore-text">Explore</div>
+                <img src="assets/images/down-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="
+            background-image: url('assets/images/banners/shutterstock_2221363707_v2.jpg');
+          "
+        >
+          <div class="hero-mid-section">
+            <img
+              class="single-logo-transparent"
+              src="assets/images/single-logo-transparent.png"
+              alt=""
+            />
+            <div class="hero-mid-section-content">
+              <div class="hero-title">
+                Energy that brings everyone closer together
+              </div>
+              <div class="hero-subtitle">365 days a year - We are here</div>
+            </div>
+          </div>
+
+          <div class="hero-lower-section">
+            <div class="explore-link-container">
+              <a class="explore-link" href="#about-us">
+                <div class="explore-text">Explore</div>
+                <img src="assets/images/down-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-section" style="background-position: top;">
+        <div id="about-us" class="oval-container">
+          <div class="energlobix__title text-center text-blue">
+            Welcome to EnerGlobix
+          </div>
+
+          <div class="container energlobix__text mt-3 text-center">
+            A leading and trusted global energy & commodity
+            <br class="hide-on-mobile" />
+            company committed to bringing the world closer
+            <br class="hide-on-mobile" />
+            together through reliable energy solutions.
+          </div>
+
+          <div class="mt-3">
+            <a class="energlobix__links text-black" href="whoweare.html"
+              >Learn More</a
+            >
+          </div>
+
+          <a href="whoweare.html"
+            ><img class="mt-1" src="assets/images/learn-more-arrow.svg" alt=""
+          /></a>
+
+          <div style="margin-top: 60px;" class="energlobix__title text-blue">
+            Our commodities
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image"
+                    src="assets/images/TC1-aviation-fuel.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="divider-logo-container">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="energlobix__card-title text-blue mt-3">
+                    TC1 Aviation Fuel
+                  </div>
+                  <div class="energlobix__card-text mt-3">
+                    Premium fuel for aviation, ensuring optimal performance and
+                    safety.
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      class="energlobix__links text-gold"
+                      href="whatwedo.html#TC1-Aviation-Fuel"
+                      >Read More</a
+                    >
+                  </div>
+                  <img
+                    src="assets/images/about-us-read-more-arrow.svg"
+                    class="read-more-arrow2 mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image"
+                    src="assets/images/Diesel.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="divider-logo-container">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="energlobix__card-title text-blue mt-3">
+                    Diesel
+                  </div>
+                  <div class="energlobix__card-text mt-3">
+                    High-quality diesel for transportation and industrial use.
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      class="energlobix__links text-gold"
+                      href="whatwedo.html#Diesel"
+                      >Read More</a
+                    >
+                  </div>
+                  <img
+                    src="assets/images/about-us-read-more-arrow.svg"
+                    class="read-more-arrow2 mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image"
+                    src="assets/images/Petrol.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="divider-logo-container">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="energlobix__card-title text-blue mt-3">
+                    Petrol
+                  </div>
+                  <div class="energlobix__card-text mt-3">
+                    Reliable petrol for everyday use, powering vehicles and
+                    machinery.
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      class="energlobix__links text-gold"
+                      href="whatwedo.html#Petrol"
+                      >Read More</a
+                    >
+                  </div>
+                  <img
+                    src="assets/images/about-us-read-more-arrow.svg"
+                    class="read-more-arrow2 mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-lg-2">
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image"
+                    src="assets/images/Crude.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="divider-logo-container">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="energlobix__card-title text-blue mt-3">Crude</div>
+                  <div class="energlobix__card-text mt-3">
+                    Unrefined crude oil for various industrial applications.
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      class="energlobix__links text-gold"
+                      href="whatwedo.html#Crude"
+                      >Read More</a
+                    >
+                  </div>
+                  <img
+                    src="assets/images/about-us-read-more-arrow.svg"
+                    class="read-more-arrow2 mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img class="card-image" src="assets/images/Coal.jpg" alt="" />
+                </div>
+                <div class="card-content">
+                  <div class="divider-logo-container">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="energlobix__card-title text-blue mt-3">Coal</div>
+                  <div class="energlobix__card-text mt-3">
+                    High-grade coal for energy generation and industrial
+                    processes.
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      class="energlobix__links text-gold"
+                      href="whatwedo.html#Coal"
+                      >Read More</a
+                    >
+                  </div>
+                  <img
+                    src="assets/images/about-us-read-more-arrow.svg"
+                    class="read-more-arrow2 mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image"
+                    src="assets/images/Fertilizer.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content">
+                  <div class="divider-logo-container">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="energlobix__card-title text-blue mt-3">
+                    Fertilizer
+                  </div>
+                  <div class="energlobix__card-text mt-3">
+                    Essential agricultural products to enhance crop yield and
+                    quality
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      class="energlobix__links text-gold"
+                      href="whatwedo.html#Fertilizer"
+                      >Read More</a
+                    >
+                  </div>
+                  <img
+                    src="assets/images/about-us-read-more-arrow.svg"
+                    class="read-more-arrow2 mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="energlobix__text text-center container"
+            style="margin-top: 60px;"
+          >
+            EnerGlobix provide a wide array of energy & commodity
+            <br class="hide-on-mobile" />
+            products, each sourced to meet the highest standards
+            <br class="hide-on-mobile" />
+            of performance, sustainability and reliability.
+          </div>
+          <div class="mt-3">
+            <a
+              class="energlobix__links text-black"
+              href="whatwedo.html#about-us"
+              >Learn more about our products</a
+            >
+          </div>
+          <a href="whatwedo.html#about-us"
+            ><img
+              class="mt-1 d-none"
+              src="assets/images/learn-more-arrow.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+
+      <!-- How we do it Section -->
+      <div class="black-section">
+        <div class="how-we-do-it-section">
+          <div class="energlobix__title text-gold">
+            How we do it
+          </div>
+          <div class="container energlobix__text text-white mt-3 text-center">
+            EnerGlobix commitment to excellence extends
+            <br class="hide-on-mobile" />
+            beyond our products to the services we provide. We strive
+            <br class="hide-on-mobile" />
+            to be a trusted partner in supply, distribution, and investment,
+            <br class="hide-on-mobile" />
+            ensuring seamless and efficient energy solutions for our
+            <br class="hide-on-mobile" />
+            clients and communities.
+          </div>
+        </div>
+
+        <div class="row ms-0 me-0 d-block d-sm-none">
+          <div class="col-lg-4 col-md-4 col-sm-12 m-0 p-0">
+            <div
+              class="energlobix__title how-box-bg1 text-center d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="how-section-links text-white border border-white rounded-1"
+                href="howwedoit.html#Supply"
+                >Supply</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 m-0 p-0">
+            <div
+              class="energlobix__title how-box-bg2 text-center d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="how-section-links text-white border border-white rounded-1"
+                href="howwedoit.html#Distribution"
+                >Distribution</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 m-0 p-0">
+            <div
+              class="energlobix__title how-box-bg3 text-center d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="how-section-links text-white border border-white rounded-1"
+                href="howwedoit.html#Investment"
+                >Investment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="content">
+              <div
+                class="energlobix__title how-box-bg1 text-center d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="how-section-links text-white border border-white rounded-1"
+                  href="howwedoit.html#Supply"
+                  >Supply</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="content">
+              <div
+                class="energlobix__title how-box-bg2 text-center d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="how-section-links text-white border border-white rounded-1"
+                  href="howwedoit.html#Distribution"
+                  >Distribution</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="content">
+              <div
+                class="energlobix__title how-box-bg3 text-center d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="how-section-links text-white border border-white rounded-1"
+                  href="howwedoit.html#Investment"
+                  >Investment</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more grid items as needed -->
+        </div>
+
+        <div class="commodities-section">
+          <div
+            class="energlobix__title text-center text-gold"
+            style="margin-bottom: 73px;"
+          >
+            Commodities that brings nations together
+          </div>
+
+          <div class="latest-news-section">
+            <div class="latest-news">
+              <div class="news-title">
+                <img
+                  class="feed-image"
+                  src="assets/images/Generic_Feed-icon.svg.png"
+                  alt=""
+                />
+                <div class="energlobix__title text-gold">
+                  News
+                </div>
+              </div>
+              <div class="learn-more mt-3 text-center text-white">
+                07:00 EDT on 12 June 2024
+              </div>
+              <div class="energlobix__text mt-3 text-center text-white">
+                sinum veligni simporest, nos perum <br />
+                harios num, ipsandiae. Im aut quam
+              </div>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="latest-news">
+              <div class="news-title">
+                <img
+                  class="feed-image"
+                  src="assets/images/Generic_Feed-icon.svg.png"
+                  alt=""
+                />
+                <div class="energlobix__title text-gold">
+                  News
+                </div>
+              </div>
+              <div class="learn-more mt-3 text-center text-white">
+                07:00 EDT on 12 June 2024
+              </div>
+              <div class="energlobix__text mt-3 text-center text-white">
+                sinum veligni simporest, nos perum <br />
+                harios num, ipsandiae. Im aut quam
+              </div>
+            </div>
+          </div>
+
+          <div class="price-advisory energlobix__links text-center text-white">
+            Share prices are delayed by approx. 10 minutes
+          </div>
+        </div>
+
+        <div class="row text-center ms-0 me-0">
+          <div class="col-lg-6 col-md-6 col-sm-12 insights">
+            <img src="assets/images/insights-logo.svg" alt="" />
+            <div class="energlobix__title text-gold mt-5">
+              Insights & stories
+            </div>
+            <div
+              class="container energlobix__text_2 mt-3 text-center text-white"
+            >
+              Learn about the milestones and <br class="hide-on-mobile" />
+              accolades that we have achieved over the years.
+              <br class="hide-on-mobile" />
+              From industry experince to groundbreaking
+              <br class="hide-on-mobile" />
+              projects, we are proud of our contributions
+              <br class="hide-on-mobile" />
+              to the commodity sector.
+            </div>
+            <div class="mt-5">
+              <a
+                class="energlobix__links text-gold"
+                href="whoweare.html#Key-achievements"
+                >Learn More</a
+              >
+            </div>
+            <img
+              src="assets/images/about-us-read-more-arrow.svg"
+              class="read-more-arrow2 mt-1"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 career">
+            <img src="assets/images/careers-logo.svg" alt="" />
+            <div class="energlobix__title text-blue mt-5">
+              Careers
+            </div>
+            <div
+              class="container energlobix__text_2 mt-3 text-center text-white"
+            >
+              Join our team and be a part of a dynamic<br
+                class="hide-on-mobile"
+              />
+              and forward-thinking company. Explore our
+              <br class="hide-on-mobile" />
+              career opportunities and find out how you can
+              <br class="hide-on-mobile" />
+              contribute to our mission of leading the way in
+              <br class="hide-on-mobile" />
+              the energy industry.
+            </div>
+            <div class="mt-5">
+              <a class="energlobix__links text-blue" href="#contactform"
+                >Join our Team</a
+              >
+            </div>
+            <a href="#contactform"
+              ><img
+                class="mt-1"
+                src="assets/images/learn-more-arrow.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="contact-us-section container">
+          <div id="contactform" class="energlobix__title text-gold text-center">
+            Contact us
+          </div>
+
+          <div class="row contact-details justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 contact-information d-none">
+              <div class="energlobix__text mt-3 text-white">
+                Office Location
+              </div>
+              <div class="energlobix__text mt-3 text-white">Address</div>
+              <div class="energlobix__text mt-3 text-white">Contact</div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 contact-form p-0">
+              <form class="contact-form" action="" method="post">
+                <div class="row">
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 pe-lg-2 pe-md-2 p-sm-0"
+                  >
+                    <input type="text" name="name" placeholder="Name*" id="" />
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="Phone*"
+                      id=""
+                    />
+                  </div>
+                  <div
+                    class="col-lg-6 col-md-6 col-sm-12 ps-lg-2 ps-md-2 p-sm-0"
+                  >
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email*"
+                      id=""
+                    />
+                    <input
+                      type="text"
+                      name="company"
+                      placeholder="Company*"
+                      id=""
+                    />
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 p-sm-0">
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="Subject*"
+                      id=""
+                    />
+                    <textarea
+                      name="message"
+                      placeholder="Message*"
+                      rows="3"
+                    ></textarea>
+                    <button class="btn" type="submit">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-section" style="padding-top: 52.328px;">
+          <div class="container">
+            <div class="footer-logo text-center">
+              <img src="assets/images/logo.png" alt="" />
+            </div>
+
+            <div class="footer-links mt-5">
+              <div class="footer-link-text mt-3 text-gold">
+                © EnerGlobix 2024
+              </div>
+              <div class="footer-link-text mt-3 text-gold">
+                <a href="/terms-of-use.html">Terms of use</a>
+              </div>
+              <div class="footer-link-text mt-3 text-gold">
+                <a href="/privacy-policy.html">Privacy policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Wait until the entire page is loaded
+      window.addEventListener("load", function () {
+        // Hide the loader
+        document.getElementById("loader").style.display = "none";
+        // Show the main content
+        document.getElementById("main-content").style.display = "block";
+        // Show message in console
+        console.log("Content is loaded");
+      });
+    </script>
+  </body>
+</html>

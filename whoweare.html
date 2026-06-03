@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGlobix :: Who we are</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader" style="height: 100vh;">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border" role="status">
+          <span class="sr-only"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+      <div class="navbar-container">
+        <div class="energlobix__navbar">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" class="logo" />
+          </a>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            &#9776;
+          </button>
+
+          <div class="navlinks">
+            <ul>
+              <a href="whoweare.html"><li class="active">Who We Are</li></a>
+              <a href="whatwedo.html"><li>What We Do</li></a>
+              <a href="howwedoit.html"><li>How We Do it</li></a>
+              <a href="insights.html"><li>Insights</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+          </div>
+
+          <div class="navlinks-mobile">
+            <ul>
+              <li>
+                <div
+                  onclick="toggleSubmenu('who-we-are-m-links')"
+                  class="link-header text-white"
+                >
+                  Who We Are
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="who-we-are-m-links">
+                  <a href="whoweare.html"><li>Welcome</li></a>
+                  <a href="whoweare.html#Purpose-and-Values"
+                    ><li>Purpose and Values</li></a
+                  >
+                  <a href="whoweare.html#Vision-and-Mission"
+                    ><li>Vision and Mission</li></a
+                  >
+                  <a href="whoweare.html#story"><li>EnerGlobix Story</li></a>
+                  <a href="whoweare.html#Key-achievements"
+                    ><li>Key achievements</li></a
+                  >
+                  <a href="whoweare.html#Commitment-to-excellence"
+                    ><li>Commitment to excellence</li></a
+                  >
+                </ul>
+              </li>
+              <li>
+                <div
+                  onclick="toggleSubmenu('what-we-do-m-links')"
+                  class="link-header text-white active"
+                >
+                  What We Do
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="what-we-do-m-links">
+                  <a href="whatwedo.html"><li>Our Commodities</li></a>
+                  <a href="whatwedo.html#TC1-Aviation-Fuel"
+                    ><li>TC1 Aviation Fuel</li></a
+                  >
+                  <a href="whatwedo.html#Diesel"><li>Diesel</li></a>
+                  <a href="whatwedo.html#Petrol"><li>Petrol</li></a>
+                  <a href="whatwedo.html#Crude"><li>Crude</li></a>
+                  <a href="whatwedo.html#Coal"><li>Coal</li></a>
+                  <a href="whatwedo.html#Fertilizer"><li>Fertilizer</li></a>
+                </ul>
+              </li>
+
+              <li>
+                <div
+                  onclick="toggleSubmenu('how-we-do-it-m-links')"
+                  class="link-header text-white"
+                >
+                  How We Do it
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="how-we-do-it-m-links">
+                  <a href="howwedoit.html"><li>Our Commitment</li></a>
+                  <a href="howwedoit.html#Supply"><li>Supply</li></a>
+                  <a href="howwedoit.html#Supply-solutions"
+                    ><li>Supply solutions</li></a
+                  >
+                  <a href="howwedoit.html#Distribution"
+                    ><li>Distribution</li></a
+                  >
+                  <a href="howwedoit.html#Distribution-solutions"
+                    ><li>Distribution solutions</li></a
+                  >
+                  <a href="howwedoit.html#Investment"><li>Investment</li></a>
+                  <a href="howwedoit.html#Investment-solutions"
+                    ><li>Investment solutions</li></a
+                  >
+                </ul>
+              </li>
+
+              <li>
+                <div
+                  onclick="toggleSubmenu('insights-m-links')"
+                  class="link-header text-white"
+                >
+                  Insights
+                  <img src="assets/images/chevron-right.svg" alt="right" />
+                </div>
+                <ul id="insights-m-links">
+                  <a href="insights.html"><li>Our Culture</li></a>
+                  <a href="insights.html#Employees"><li>Employees</li></a>
+                  <a href="insights.html#Achievements"><li>Achievements</li></a>
+                  <a href="insights.html#Careers"><li>Careers</li></a>
+                </ul>
+              </li>
+
+              <li class="link-header">
+                <a class="text-white" href="contact.html"
+                  >Contact
+                  <img src="assets/images/chevron-right.svg" alt="right"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slider-section">
+        <div
+          class="slide active"
+          style="
+            background-image: url('/Energlobix/assets/images/shutterstock_1694588062_v2.jpg');
+          "
+        >
+          <div class="hero-mid-section">
+            <img
+              class="single-logo-transparent"
+              src="assets/images/single-logo-transparent.png"
+              alt=""
+            />
+            <div class="hero-mid-section-content">
+              <div class="hero-title">
+                Commodities that power <br class="hide-on-mobile" />
+                the vision of tomorrow
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-lower-section">
+            <div class="explore-link-container">
+              <a class="explore-link" href="#about-us">
+                <div class="explore-text">Explore</div>
+                <img src="assets/images/down-arrow.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div
+        id="about-us"
+        class="who-we-are-about-section"
+        style="background-position: top;"
+      >
+        <div id="Welcome" class="oval-container-2">
+          <div class="energlobix__title text-center text-blue">
+            Welcome to EnerGlobix
+          </div>
+
+          <div class="container energlobix__text mt-3 text-center">
+            A leading and trusted global energy & commodity
+            <br class="hide-on-mobile" />
+            company committed to bringing the world closer
+            <br class="hide-on-mobile" />
+            together through reliable energy solutions.
+          </div>
+
+          <div class="row about-us">
+            <div
+              id="Purpose-and-Values"
+              class="col-lg-6 col-md-4 col-sm-12 mt-3"
+            >
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image-2"
+                    src="assets/images/purpose-and-values.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content-2">
+                  <div
+                    class="energlobix__card-title text-blue mt-5 text-center"
+                  >
+                    Purpose and Values
+                  </div>
+                  <div class="energlobix__text text-center mt-3">
+                    Our purpose is to deliver energy that fuels progress and
+                    connectivity across the globe.
+                  </div>
+
+                  <div class="energlobix__text text-center mt-3">
+                    We believe in integrity, innovation, and sustainability.
+                  </div>
+
+                  <div class="energlobix__text text-center mt-3 mb-3">
+                    These core values guide every decision we make, from our
+                    daily operations to our long-term strategies.
+                  </div>
+
+                  <div class="divider-container text-center">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="Vision-and-Mission"
+              class="col-lg-6 col-md-4 col-sm-12 mt-3"
+            >
+              <div class="about-us-card">
+                <div class="card-image-container text-center">
+                  <img
+                    class="card-image-2"
+                    src="assets/images/vision-and-mission.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-content-2">
+                  <div
+                    class="energlobix__card-title text-blue mt-5 text-center"
+                  >
+                    Vision and Mission
+                  </div>
+                  <div class="energlobix__text text-center mt-3">
+                    Our vision is to be the most trusted energy provider, known
+                    for our commitment to quality, safety, and sustainability.
+                  </div>
+
+                  <div class="energlobix__text text-center mt-3 mb-3">
+                    Our mission is to lead the <br />
+                    energy sector by delivering <br />
+                    superior products and <br />
+                    services, fostering strong <br />
+                    relationships with our <br />
+                    stakeholders, and making <br />
+                    a positive impact on the <br />
+                    communities we serve. <br />
+                  </div>
+
+                  <div class="divider-container text-center">
+                    <img
+                      class="divider-logo"
+                      src="assets/images/divider-logo.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="margin-top: 79.532px;"
+            class="energlobix__title text-blue"
+          >
+            Our Global Reach
+          </div>
+          <div class="energlobix__text mt-3 text-center container">
+            With a network of partners and clients worldwide, we have the scale
+            <br class="hide-on-mobile" />
+            and expertise to meet the energy needs of diverse markets. Our
+            <br class="hide-on-mobile" />
+            global presence allows us to leverage local knowledge and insights
+            <br class="hide-on-mobile" />
+            to deliver customized solutions that drive
+            <br class="hide-on-mobile" />
+            growth and development.
+          </div>
+        </div>
+      </div>
+
+      <!-- How we do it Section -->
+      <div class="black-section">
+        <div id="story" class="how-we-do-it-section">
+          <div class="energlobix__title text-gold">
+            EnerGlobix Story
+          </div>
+          <div class="container energlobix__text text-white mt-3 text-center">
+            EnerGlobix leadership has had extensive
+            <br class="hide-on-mobile" />
+            experience since 2010 with importing diesel and petrol
+            <br class="hide-on-mobile" />
+            in Central Asia. Recognizing the need for reliable energy,
+            <br class="hide-on-mobile" />
+            we strategically expanded the company into upstream,
+            <br class="hide-on-mobile" />
+            midstream, and downstream operations, encompassing
+            <br class="hide-on-mobile" />
+            crude oil refining, fuel processing, blending, distribution,
+            <br class="hide-on-mobile" />
+            and fertiliser supply and distribution.
+          </div>
+        </div>
+
+        <div
+          class="row text-center ms-0 me-0"
+          style="
+            background-image: url('/Energlobix/assets/images/shutterstock_1694588062_v2.jpg');
+          "
+        >
+          <div
+            id="Key-achievements"
+            class="col-lg-6 col-md-6 col-sm-12 achievements container"
+            style="
+              background-image: none;
+              background-color: rgb(25, 45, 80, 0.7);
+            "
+          >
+            <div class="energlobix__title text-gold mt-5">
+              Key achievements
+            </div>
+            <div class="energlobix__text mt-3 text-center text-white">
+              <div class="energlobix__text__subtitle">Crude Oil Refining</div>
+              <div class="energlobix__point mt-1 mb-3">
+                Established advanced refining processes.
+              </div>
+
+              <div class="energlobix__text__subtitle">
+                Fuel Processing and Blending
+              </div>
+              <div class="energlobix__point mt-1 mb-3">
+                Developed sophisticated fuel processing facilities.
+              </div>
+
+              <div class="energlobix__text__subtitle">
+                Supply & Distribution
+              </div>
+              <div class="energlobix__point mt-1 mb-3">
+                Ensured efficient fuel and LPG distribution across Central Asia.
+              </div>
+
+              <div class="energlobix__text__subtitle">Quality Control</div>
+              <div class="energlobix__point mt-1 mb-3">
+                Implemented rigorous testing and laboratory services.
+              </div>
+
+              <div class="energlobix__text__subtitle">
+                Exploration & Production
+              </div>
+              <div class="energlobix__point mt-1">
+                Expanded into discovering and extracting oil and gas resources.
+              </div>
+            </div>
+            <div class="text-center">
+              <img
+                class="mt-5"
+                src="assets/images/who-we-are-achievements-commitments-arrows.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            id="Commitment-to-excellence"
+            class="col-lg-6 col-md-6 col-sm-12 commitment container"
+            style="
+              background-image: none;
+              background-color: rgb(184, 166, 133, 0.7);
+            "
+          >
+            <div class="energlobix__title text-blue mt-5">
+              Commitment <br />
+              to excellence
+            </div>
+            <div class="energlobix__text_2 mt-3 text-center">
+              EnerGlobix’s visionary leadership <br class="hide-on-mobile" />
+              experience transforms EnerGlobix into
+              <br class="hide-on-mobile" />
+              a leading force in the energy industry.
+              <br class="hide-on-mobile" />
+              EnerGlobix’s dedication to excellence and
+              <br class="hide-on-mobile" />
+              strategic investment ensures the company’s
+              <br class="hide-on-mobile" />
+              continued success and significant impact
+              <br class="hide-on-mobile" />
+              on the energy future.
+            </div>
+
+            <div class="text-center">
+              <img
+                class="mt-5"
+                src="assets/images/who-we-are-achievements-commitments-arrows.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="space-above-footer"
+          style="height: 100px; width: 100%;"
+        ></div>
+
+        <div class="footer-section">
+          <div class="container">
+            <div class="footer-logo text-center">
+              <img src="assets/images/logo.png" alt="" />
+            </div>
+
+            <div class="footer-links mt-5">
+              <div class="footer-link-text mt-3 text-gold">
+                © EnerGlobix 2024
+              </div>
+              <div class="footer-link-text mt-3 text-gold">
+                <a href="terms-of-use.html">Terms of use</a>
+              </div>
+              <div class="footer-link-text mt-3 text-gold">
+                <a href="privacy-policy.html">Privacy policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Wait until the entire page is loaded
+      window.addEventListener("load", function () {
+        // Hide the loader
+        document.getElementById("loader").style.display = "none";
+        // Show the main content
+        document.getElementById("main-content").style.display = "block";
+        // Show message in console
+        console.log("Content is loaded");
+      });
+    </script>
+  </body>
+</html>

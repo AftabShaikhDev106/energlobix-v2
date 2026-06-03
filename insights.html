@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGlobix :: Insights</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+            <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Loader -->
+<div id="loader" style="height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+</div>
+
+<div id="main-content" style="display: none;">
+
+    <div class="navbar-container">
+        <div class="energlobix__navbar">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="" class="logo" />
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>                
+
+            <div class="navlinks">
+                <ul>
+                    <a href="whoweare.html"><li>Who We Are</li></a>
+                    <a href="whatwedo.html"><li>What We Do</li></a>
+                    <a href="howwedoit.html"><li>How We Do it</li></a>
+                    <a href="insights.html"><li class="active">Insights</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+
+            <div class="navlinks-mobile">
+                <ul>
+                        <li>
+                            <div onclick="toggleSubmenu('who-we-are-m-links')" class="link-header text-white">Who We Are <img src="assets/images/chevron-right.svg" alt="right"></div>
+                            <ul id="who-we-are-m-links">
+                                <a href="whoweare.html"><li>Welcome</li></a>
+                                <a href="whoweare.html#Purpose-and-Values"><li>Purpose and Values</li></a>
+                                <a href="whoweare.html#Vision-and-Mission"><li>Vision and Mission</li></a>
+                                <a href="whoweare.html#story"><li>EnerGlobix Story</li></a>
+                                <a href="whoweare.html#Key-achievements"><li>Key achievements</li></a>
+                                <a href="whoweare.html#Commitment-to-excellence"><li>Commitment to excellence</li></a>
+                            </ul>
+                        </li>                    
+                    <li>
+                        <div onclick="toggleSubmenu('what-we-do-m-links')" class="link-header text-white active">What We Do <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="what-we-do-m-links">
+                            <a href="whatwedo.html"><li>Our Commodities</li></a>
+                            <a href="whatwedo.html#TC1-Aviation-Fuel"><li>TC1 Aviation Fuel</li></a>
+                            <a href="whatwedo.html#Diesel"><li>Diesel</li></a>
+                            <a href="whatwedo.html#Petrol"><li>Petrol</li></a>
+                            <a href="whatwedo.html#Crude"><li>Crude</li></a>
+                            <a href="whatwedo.html#Coal"><li>Coal</li></a>
+                            <a href="whatwedo.html#Fertilizer"><li>Fertilizer</li></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div onclick="toggleSubmenu('how-we-do-it-m-links')" class="link-header text-white">How We Do it <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="how-we-do-it-m-links">
+                            <a href="howwedoit.html"><li>Our Commitment</li></a>
+                            <a href="howwedoit.html#Supply"><li>Supply</li></a>
+                            <a href="howwedoit.html#Supply-solutions"><li>Supply solutions</li></a>
+                            <a href="howwedoit.html#Distribution"><li>Distribution</li></a>
+                            <a href="howwedoit.html#Distribution-solutions"><li>Distribution solutions</li></a>
+                            <a href="howwedoit.html#Investment"><li>Investment</li></a>
+                            <a href="howwedoit.html#Investment-solutions"><li>Investment solutions</li></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div onclick="toggleSubmenu('insights-m-links')" class="link-header text-white">Insights <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="insights-m-links">
+                            <a href="insights.html"><li>Our Culture</li></a>
+                            <a href="insights.html#Employees"><li>Employees</li></a>
+                            <a href="insights.html#Achievements"><li>Achievements</li></a>
+                            <a href="insights.html#Careers"><li>Careers</li></a>                            
+                        </ul>
+                    </li>                    
+
+                    <li class="link-header">
+                        <a class="text-white" href="contact.html">Contact <img src="assets/images/chevron-right.svg" alt="right"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hero-slider-section">
+        
+        <div class="slide active" style="background-image: url('assets/images/insights-hero-bg.png');">
+            <div class="hero-mid-section">
+                <img class="single-logo-transparent" src="assets/images/single-logo-transparent.png" alt="" />
+                <div class="hero-mid-section-content">
+                    <div class="hero-title">
+                        EnerGlobix culture <br class="hide-on-mobile"> and dynamic environment
+                    </div>
+                </div>
+            </div>
+    
+            <div class="hero-lower-section">
+                <div class="explore-link-container">
+                    <a class="explore-link" href="#about-us">
+                        <div class="explore-text">Explore</div>
+                        <img src="assets/images/down-arrow.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+    <div id="about-us" class="insights-about-section" style="background-position: top;">
+
+        <div id="Our-Culture" class="oval-container-3 pb-0">
+            
+            <div class="container energlobix__text text-gold mt-3 text-center" style="margin-bottom: 70px;">
+                Our success is driven by a team of highly skilled <br class="hide-on-mobile">
+                professionals who are passionate about energy and committed to <br class="hide-on-mobile">
+                our company's mission and values. Our diverse workforce brings <br class="hide-on-mobile">
+                together a wealth of experience and expertise, enabling us to <br class="hide-on-mobile">
+                deliver outstanding results and drive continuous improvement.
+            </div>            
+
+            <div class="row mt-5">
+
+                <!-- Row 1 -->
+                <div class="col-lg-6 col-sm-12 insights-box d-none d-lg-block d-xl-block" style="background-image: url('assets/images/insights-box-bg-1.png'); background-size: cover;"></div>
+                <div id="Employees" class="col-lg-6 col-sm-12 insights-box" style="background-image: url('assets/images/insights-box-bg-4.png'); background-size: cover;">
+                    <div class="text-center">
+                        <img src="assets/images/insight-page-box-logo.svg" alt="">
+                    </div>
+                    <div class="energlobix__card-title text-blue text-center mt-3">Employees</div>
+                    <div class="energlobix__text text-black text-center mt-3">
+                        The diverse talents and dedication of EnerGlobix teams are a reflection of the significant time and effort EnerGlobix invests in the development of each employee.
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 insights-box d-block d-sm-none" style="background-image: url('assets/images/insights-box-bg-1.png'); background-size: cover;"></div>
+                                               
+                <!-- Row 2 -->
+                <div id="Achievements" class="col-lg-6 col-sm-12 insights-box" style="background-image: url('assets/images/insights-box-bg-4.png'); background-size: cover;">
+                    <div class="text-center">
+                        <img src="assets/images/insight-page-box-logo.svg" alt="">
+                    </div>
+                    <div class="energlobix__card-title text-blue text-center mt-3">Achievements</div>
+                    <div class="energlobix__text text-black text-center mt-3">
+                        Whether it's pioneering new <br> technologies or expanding our global footprint, our achievements reflect our commitment to excellence and innovation.
+                    </div>
+                    <div class="mt-3 text-center">
+                        <a class="energlobix__links text-blue text-center" href="whoweare.html#story">Learn more about EnerGlobix <br class="d-block d-sm-none">leadership here</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 insights-box" style="background-image: url('assets/images/insights-box-bg-2.png'); background-size: cover;"></div>
+                
+                                            
+                <!-- Row 3 -->
+                <div class="col-lg-6 col-sm-12 insights-box d-none d-lg-block d-xl-block" style="background-image: url('assets/images/insights-box-bg-3.png'); background-size: cover; background-position: right;"></div>
+                <div id="Careers" class="col-lg-6 col-sm-12 insights-box" style="background-image: url('assets/images/insights-box-bg-4.png'); background-size: cover;">
+                    <div class="text-center">
+                        <img src="assets/images/insight-page-box-logo.svg" alt="">
+                    </div>
+                    <div class="energlobix__card-title text-blue text-center mt-3">Careers</div>
+                    <div class="energlobix__text text-black text-center mt-3">
+                        Join a team that’s always in commute, leading the way in the energy industry. At EnerGlobix, we are dedicated to fostering a supportive and inclusive work environment where every employee can thrive and make a difference.
+                    </div>
+                    <div class="mt-3">
+                        <a class="energlobix__links text-blue hide-on-mobile" href="contact.html#about-us">Join our team</a>
+                        <a class="energlobix__links text-blue d-block d-sm-none" href="contact.html#officeaddress">Join our team</a>
+                    </div>
+                </div>                                
+                <div class="col-lg-6 col-sm-12 insights-box d-block d-sm-none" style="background-image: url('assets/images/insights-box-bg-3.png'); background-size: cover; background-position: center;"></div>
+            </div>
+
+            <div class="how-we-do-it-section">
+                <div class="container energlobix__text text-white mt-3 text-center">
+                    Contact us and explore our career <br class="hide-on-mobile" />
+                    opportunities and find out how you can <br class="hide-on-mobile" />
+                    contribute to our mission of leading the <br class="hide-on-mobile" />
+                    way in the energy industry.                
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- How we do it Section -->
+    <div class="black-section" style="padding-top: 300px;">
+        
+        <div class="footer-section" style="padding-top: 52.328px">
+            <div class="container">
+                <div class="footer-logo text-center">
+                    <img src="assets/images/logo.png" alt="" />
+                </div>                
+
+                <div class="footer-links mt-5">
+                    <div class="footer-link-text mt-3 text-gold">
+                        © EnerGlobix 2024
+                    </div>
+                    <div class="footer-link-text mt-3 text-gold">
+                        <a href="terms-of-use.html">Terms of use</a>
+                    </div>
+                    <div class="footer-link-text mt-3 text-gold">
+                        <a href="privacy-policy.html">Privacy policy</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+<button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Wait until the entire page is loaded
+        window.addEventListener('load', function() {
+            // Hide the loader
+            document.getElementById('loader').style.display = 'none';
+            // Show the main content
+            document.getElementById('main-content').style.display = 'block';
+            // Show message in console
+            console.log('Content is loaded')
+        });
+    </script>
+</body>
+
+</html>

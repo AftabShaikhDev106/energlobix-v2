@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGlobix :: How we do it</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Loader -->
+<div id="loader" style="height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+</div>
+
+<div id="main-content" style="display: none;">
+
+    <div class="navbar-container">
+        <div class="energlobix__navbar">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="" class="logo" />
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>                
+
+            <div class="navlinks">
+                <ul>
+                    <a href="whoweare.html"><li>Who We Are</li></a>
+                    <a href="whatwedo.html"><li>What We Do</li></a>
+                    <a href="howwedoit.html"><li class="active">How We Do it</li></a>
+                    <a href="insights.html"><li>Insights</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+
+            <div class="navlinks-mobile">
+                <ul>
+                        <li>
+                            <div onclick="toggleSubmenu('who-we-are-m-links')" class="link-header text-white">Who We Are <img src="assets/images/chevron-right.svg" alt="right"></div>
+                            <ul id="who-we-are-m-links">
+                                <a href="whoweare.html"><li>Welcome</li></a>
+                                <a href="whoweare.html#Purpose-and-Values"><li>Purpose and Values</li></a>
+                                <a href="whoweare.html#Vision-and-Mission"><li>Vision and Mission</li></a>
+                                <a href="whoweare.html#story"><li>EnerGlobix Story</li></a>
+                                <a href="whoweare.html#Key-achievements"><li>Key achievements</li></a>
+                                <a href="whoweare.html#Commitment-to-excellence"><li>Commitment to excellence</li></a>
+                            </ul>
+                        </li>                    
+                    <li>
+                        <div onclick="toggleSubmenu('what-we-do-m-links')" class="link-header text-white active">What We Do <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="what-we-do-m-links">
+                            <a href="whatwedo.html"><li>Our Commodities</li></a>
+                            <a href="whatwedo.html#TC1-Aviation-Fuel"><li>TC1 Aviation Fuel</li></a>
+                            <a href="whatwedo.html#Diesel"><li>Diesel</li></a>
+                            <a href="whatwedo.html#Petrol"><li>Petrol</li></a>
+                            <a href="whatwedo.html#Crude"><li>Crude</li></a>
+                            <a href="whatwedo.html#Coal"><li>Coal</li></a>
+                            <a href="whatwedo.html#Fertilizer"><li>Fertilizer</li></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div onclick="toggleSubmenu('how-we-do-it-m-links')" class="link-header text-white">How We Do it <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="how-we-do-it-m-links">
+                            <a href="howwedoit.html"><li>Our Commitment</li></a>
+                            <a href="howwedoit.html#Supply"><li>Supply</li></a>
+                            <a href="howwedoit.html#Supply-solutions"><li>Supply solutions</li></a>
+                            <a href="howwedoit.html#Distribution"><li>Distribution</li></a>
+                            <a href="howwedoit.html#Distribution-solutions"><li>Distribution solutions</li></a>
+                            <a href="howwedoit.html#Investment"><li>Investment</li></a>
+                            <a href="howwedoit.html#Investment-solutions"><li>Investment solutions</li></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div onclick="toggleSubmenu('insights-m-links')" class="link-header text-white">Insights <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="insights-m-links">
+                            <a href="insights.html"><li>Our Culture</li></a>
+                            <a href="insights.html#Employees"><li>Employees</li></a>
+                            <a href="insights.html#Achievements"><li>Achievements</li></a>
+                            <a href="insights.html#Careers"><li>Careers</li></a>                            
+                        </ul>
+                    </li>                    
+
+                    <li class="link-header">
+                        <a class="text-white" href="contact.html">Contact <img src="assets/images/chevron-right.svg" alt="right"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hero-slider-section">
+        
+        <div class="slide active">
+            <video class="video-bg" autoplay muted loop playsinline>
+                <source src="https://magnetictron.com/static/videos/how-we-do-it.mp4" type="video/mp4">
+                <source src="https://magnetictron.com/static/videos/how-we-do-it.mov" type="video/mov">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-mid-section">
+                <img class="single-logo-transparent" src="assets/images/single-logo-transparent.png" alt="" />
+                <div class="hero-mid-section-content">
+                    <div class="hero-title">
+                        Innovation <br class="hide-on-mobile">for a brighter future
+                    </div>
+                </div>
+            </div>
+    
+            <div class="hero-lower-section">
+                <div class="explore-link-container">
+                    <a class="explore-link" href="#about-us">
+                        <div class="explore-text">Explore</div>
+                        <img src="assets/images/down-arrow.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+    <div id="about-us" class="how-we-do-it-about-section" style="background-position: top;">
+
+        <div id="Our-Commitment" class="oval-container-3 pb-0">
+            <div class="energlobix__title text-center text-white">
+                Our Commitment
+            </div>
+            <div class="container energlobix__text text-gold mt-3 text-center" style="margin-bottom: 70px;">
+                Our commitment to excellence extends <br class="hide-on-mobile">
+                beyond our products to the exceptional services we provide.
+            </div>            
+
+            <div class="row mt-5">
+
+                <!-- Row 1 -->
+                <div class="col-lg-4 col-sm-12 how-we-do-it-box" style="background-image: url('assets/images/how-we-do-it-box-1-bg.png'); background-size: cover;"></div>
+                <div id="Supply" class="col-lg-4 col-sm-12 how-we-do-it-box">
+                    <div class="energlobix__card-title text-gold text-center title-gold-border">Supply</div>
+                    <div class="energlobix__card-text text-white text-center mt-4">
+                        Our supply services ensure that our clients have continuous access to high-quality energy products. We manage a robust supply chain that spans the globe, sourcing energy commodities from reliable producers and delivering them to our clients efficiently and on time.
+                    </div>
+                </div>
+                <div id="Supply-solutions" class="col-lg-4 col-sm-12 how-we-do-it-box bg-dark-blue-2">
+                    <div class="energlobix__card-title-2 text-light-blue text-center">Supply<br>solutions</div>
+                    <div class="energlobix__card-text text-gold text-center mt-3">
+                        Our supply services support a wide range of industries, including aviation, transportation, manufacturing, and agriculture, providing them with the essential energy they need to operate efficiently.
+                    </div>
+                </div>                
+                
+                <!-- Row 2 -->
+                <div class="col-lg-4 col-sm-12 how-we-do-it-box" style="background-image: url('assets/images/how-we-do-it-box-2-bg.png'); background-size: cover;"></div>
+                <div id="Distribution" class="col-lg-4 col-sm-12 how-we-do-it-box bg-gold-color">
+                    <div class="energlobix__card-title text-blue text-center title-blue-border">Distribution</div>
+                    <div class="energlobix__card-text text-white text-center mt-4">
+                        We provide comprehensive distribution services that ensure our energy products reach clients wherever they are needed. Our distribution network is designed to be flexible and responsive, capable of handling the unique demands of different markets and regions.
+                    </div>
+                </div>
+                <div id="Distribution-solutions" class="col-lg-4 col-sm-12 how-we-do-it-box">
+                    <div class="energlobix__card-title-2 text-light-blue text-center">Distribution<br>solutions</div>
+                    <div class="energlobix__card-text text-gold text-center mt-3">
+                        Our distribution services are vital for delivering energy products to airports, fuel stations, industrial sites, and agricultural locations, ensuring that businesses and consumers have the energy they need.
+                    </div>
+                </div>                
+                
+                <!-- Row 3 -->
+                <div class="col-lg-4 col-sm-12 how-we-do-it-box" style="background-image: url('assets/images/how-we-do-it-box-3-bg.png'); background-size: cover;"></div>
+                <div id="Investment" class="col-lg-4 col-sm-12 how-we-do-it-box">
+                    <div class="energlobix__card-title text-gold text-center title-gold-border">Investment</div>
+                    <div class="energlobix__card-text text-white text-center mt-4">
+                        Our investment services are designed to optimize the value and availability of energy commodities in the global market. We leverage our deep market insights, advanced and extensive investment network to provide our clients with competitive pricing and strategic advantages.
+                    </div>
+                </div>
+                <div id="Investment-solutions" class="col-lg-4 col-sm-12 how-we-do-it-box bg-dark-blue-2">
+                    <div class="energlobix__card-title-2 text-light-blue text-center">Investment<br>solutions</div>
+                    <div class="energlobix__card-text text-gold text-center mt-3">
+                        Our Investment services benefit a wide array of clients, from large industrial corporations to small businesses, by providing them with access to the best prices and trading opportunities in the energy market.
+                    </div>
+                </div>                
+            </div>
+
+            <div class="how-we-do-it-section">
+                
+                <div class="energlobix__title text-center text-gold">
+                    Business Development
+                </div>
+
+                <div class="container energlobix__text text-white mt-3 text-center">
+                    We welcome new business opportunities <br class="hide-on-mobile" />
+                    and partnerships that align with our mission and <br class="hide-on-mobile" />
+                    values. Connect with us to explore collaboration <br class="hide-on-mobile" />
+                    for mutual success, prioritizing close cooperation,  <br class="hide-on-mobile" />
+                    innovative solutions, and long-term, beneficial  <br class="hide-on-mobile" />
+                    relationships.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- How we do it Section -->
+    <div class="black-section">        
+
+        <div class="footer-section" style="padding-top: 52.328px">
+            <div class="container">
+                <div class="footer-logo text-center">
+                    <img src="assets/images/logo.png" alt="" />
+                </div>                
+
+                <div class="footer-links mt-5">
+                    <div class="footer-link-text mt-3 text-gold">
+                        © EnerGlobix 2024
+                    </div>
+                    <div class="footer-link-text mt-3 text-gold">
+                        <a href="terms-of-use.html">Terms of use</a>
+                    </div>
+                    <div class="footer-link-text mt-3 text-gold">
+                        <a href="privacy-policy.html">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+    
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Wait until the entire page is loaded
+        window.addEventListener('load', function() {
+            // Hide the loader
+            document.getElementById('loader').style.display = 'none';
+            // Show the main content
+            document.getElementById('main-content').style.display = 'block';
+            // Show message in console
+            console.log('Content is loaded')
+        });
+    </script>
+</body>
+
+</html>

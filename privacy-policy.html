@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGlobix :: How we do it</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Loader -->
+<div id="loader" style="height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+</div>
+
+<div id="main-content" style="display: none;">
+
+    <div class="navbar-container">
+        <div class="energlobix__navbar">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="" class="logo" />
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>                
+
+            <div class="navlinks">
+                <ul>
+                    <a href="whoweare.html"><li>Who We Are</li></a>
+                    <a href="whatwedo.html"><li>What We Do</li></a>
+                    <a href="howwedoit.html"><li class="active">How We Do it</li></a>
+                    <a href="insights.html"><li>Insights</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+
+            <div class="navlinks-mobile">
+                <ul>
+                        <li>
+                            <div onclick="toggleSubmenu('who-we-are-m-links')" class="link-header text-white">Who We Are <img src="assets/images/chevron-right.svg" alt="right"></div>
+                            <ul id="who-we-are-m-links">
+                                <a href="whoweare.html"><li>Welcome</li></a>
+                                <a href="whoweare.html#Purpose-and-Values"><li>Purpose and Values</li></a>
+                                <a href="whoweare.html#Vision-and-Mission"><li>Vision and Mission</li></a>
+                                <a href="whoweare.html#story"><li>EnerGlobix Story</li></a>
+                                <a href="whoweare.html#Key-achievements"><li>Key achievements</li></a>
+                                <a href="whoweare.html#Commitment-to-excellence"><li>Commitment to excellence</li></a>
+                            </ul>
+                        </li>                    
+                    <li>
+                        <div onclick="toggleSubmenu('what-we-do-m-links')" class="link-header text-white active">What We Do <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="what-we-do-m-links">
+                            <a href="whatwedo.html"><li>Our Commodities</li></a>
+                            <a href="whatwedo.html#TC1-Aviation-Fuel"><li>TC1 Aviation Fuel</li></a>
+                            <a href="whatwedo.html#Diesel"><li>Diesel</li></a>
+                            <a href="whatwedo.html#Petrol"><li>Petrol</li></a>
+                            <a href="whatwedo.html#Crude"><li>Crude</li></a>
+                            <a href="whatwedo.html#Coal"><li>Coal</li></a>
+                            <a href="whatwedo.html#Fertilizer"><li>Fertilizer</li></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div onclick="toggleSubmenu('how-we-do-it-m-links')" class="link-header text-white">How We Do it <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="how-we-do-it-m-links">
+                            <a href="howwedoit.html"><li>Our Commitment</li></a>
+                            <a href="howwedoit.html#Supply"><li>Supply</li></a>
+                            <a href="howwedoit.html#Supply-solutions"><li>Supply solutions</li></a>
+                            <a href="howwedoit.html#Distribution"><li>Distribution</li></a>
+                            <a href="howwedoit.html#Distribution-solutions"><li>Distribution solutions</li></a>
+                            <a href="howwedoit.html#Investment"><li>Investment</li></a>
+                            <a href="howwedoit.html#Investment-solutions"><li>Investment solutions</li></a>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div onclick="toggleSubmenu('insights-m-links')" class="link-header text-white">Insights <img src="assets/images/chevron-right.svg" alt="right"></div>
+                        <ul id="insights-m-links">
+                            <a href="insights.html"><li>Our Culture</li></a>
+                            <a href="insights.html#Employees"><li>Employees</li></a>
+                            <a href="insights.html#Achievements"><li>Achievements</li></a>
+                            <a href="insights.html#Careers"><li>Careers</li></a>                            
+                        </ul>
+                    </li>                    
+
+                    <li class="link-header">
+                        <a class="text-white" href="contact.html">Contact <img src="assets/images/chevron-right.svg" alt="right"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hero-slider-section">
+        
+        <div class="slide active" style="background-image: url('assets/images/banners/shutterstock_2168518333.jpg');">
+            <div class="hero-mid-section">
+                <img class="single-logo-transparent" src="assets/images/single-logo-transparent.png" alt="" />
+                <div class="hero-mid-section-content">
+                    <div class="hero-title">
+                        Privacy Policy
+                    </div>
+                </div>
+            </div>
+    
+            <div class="hero-lower-section">
+                <div class="explore-link-container">
+                    <a class="explore-link" href="#about-us">
+                        <div class="explore-text">Explore</div>
+                        <img src="assets/images/down-arrow.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+    <div id="about-us" class="how-we-do-it-about-section" style="background-image: none; background-position: top; padding-top: 0;">
+        <!-- Top Oval -->
+        <div class="top-oval"></div>
+        
+        <div id="Our-Commitment" class="oval-container-3" style="padding-top: 0px; padding-bottom: 0; background-color: #192d50; margin-top: -100px;">
+            
+            <div class="energlobix__card-title text-white container text-center">
+                Cookie policy
+            </div>
+
+            <div class="energlobix__card-title-2 text-white container text-center mt-5">
+                What are cookies?    
+            </div>
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                Cookies are small files of letters and numbers that are placed on your computer by websites that you visit. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site, for example, remembering your preferences, counting the number of people looking at a website, or recognising a user’s device. We use cookies and similar technologies to provide you with a functional website and to give you a more personalised service. You can find more information about cookies at: www.allaboutcookies.org and www.youronlinechoices.eu.
+                We may also use similar technologies to cookies on our website, which may include pixels, web beacons or clear GIFs. A tracking pixel is typically a one-pixel, transparent image (although it can be a visible image as well), located on a web page or in an e-mail that communicates to us whether you viewed an email that we sent you or visited a certain page on our Site. A clear GIF may enable us to relate your viewing or receipt of a web page or message to other information we hold about you.                
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                For more information about how to change your cookie preferences, please see the heading ‘How do I change my cookie settings?’ below.
+            </div>
+
+            <div class="energlobix__card-title-2 text-white container text-center mt-3">
+                Cookies we use
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                The cookies used on this website have been categorised as follows.
+            </div>
+
+            <div class="energlobix__card-title-2 text-white container text-center mt-3">
+                Strictly necessary cookies
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                Some of the cookies on this website are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website.
+            </div>
+            
+            <div class="energlobix__card-title-2 text-white container text-center mt-3">
+                Performance cookies
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                We may collect information about your computer, including where available your IP address, operating system and browser type, for system administration and to report aggregate information to our advertisers. This is statistical data about our users' browsing actions and patterns and does not show personal details that identify you. They help us to improve our Site and to deliver a better and more personalised service. They enable us:
+                <ul>
+                    <li>To estimate our audience size and usage pattern.</li>
+                    <li>To store information about your preferences, and so allow us to customise our Site according to your individual interests.</li>
+                    <li>To speed up your searches.</li>
+                    <li>To recognise you when you return to our Site.</li>
+                </ul>
+            </div>
+
+            <div class="energlobix__card-title-2 text-white container text-center mt-3">
+                Marketing cookies
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                These cookies are part of social media sharing functionality on the site. Facebook uses these cookies for targeted advertising on Facebook.
+            </div>
+
+            <div class="energlobix__card-title-2 text-white container text-center mt-3">
+                Third party cookies
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                This website also allows third parties to download cookies to your device.                
+            </div>
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                When you use the social media sharing tools, like Facebook, Twitter or YouTube, through this website, the relevant third-party websites also set a range of performance and other cookies onto your device.
+            </div>
+
+
+            <!-- Template -->
+            <div class="energlobix__card-title text-white container text-center">
+                
+            </div>
+
+            <div class="energlobix__card-title-2 text-white container text-center mt-3">
+                
+            </div>
+
+            <div class="container energlobix__text text-gold mt-3 text-center">
+                
+            </div>
+
+            
+
+            
+
+        </div>
+        
+        <!-- Bottom Oval -->
+        <div class="bottom-oval"></div>
+    </div>
+
+    <!-- How we do it Section -->
+    <div class="black-section">
+    
+        <div class="footer-section" style="padding-top: 52.328px">
+            <div class="container">
+                <div class="footer-logo text-center">
+                    <img src="assets/images/logo.png" alt="" />
+                </div>                
+
+                <div class="footer-links mt-5">
+                    <div class="footer-link-text mt-3 text-gold">
+                        © EnerGlobix 2024
+                    </div>
+                    <div class="footer-link-text mt-3 text-gold">
+                        <a href="terms-of-use.html">Terms of use</a>
+                    </div>
+                    <div class="footer-link-text mt-3 text-gold">
+                        <a href="privacy-policy.html">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Wait until the entire page is loaded
+        window.addEventListener('load', function() {
+            // Hide the loader
+            document.getElementById('loader').style.display = 'none';
+            // Show the main content
+            document.getElementById('main-content').style.display = 'block';
+            // Show message in console
+            console.log('Content is loaded')
+        });
+    </script>
+</body>
+
+</html>
